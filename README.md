@@ -1,6 +1,6 @@
 # Mi Portfolio 🚀
 
-¡Hola! Soy [Julia Daniela Rodriguez], una desarrolladora apasionada por la programación y el diseño. Este es mi espacio para mostrar mis habilidades, proyectos y logros. 
+¡Hola! Soy Julia Daniela Rodriguez, una desarrolladora apasionada por la programación y el diseño. Este es mi espacio para mostrar mis habilidades, proyectos y logros. 
 
 ## Sobre Mí 👋
 
