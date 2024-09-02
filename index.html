@@ -1148,7 +1148,7 @@
               <div class="carousel-item">
                 <img src="img/certificado42.png" alt="Certificado 42" />
               </div>
-            </div>            
+            </div>
             <div class="carousel-control">
               <button class="prev">&#10094;</button>
               <button class="next">&#10095;</button>
@@ -1250,50 +1250,52 @@
       setInterval(updateText, 6000); // Cambia el texto cada 6 segundos (5000ms + 1000ms de transición)
 
       // Carousel
-    let currentSlide = 0;
-    const totalSlides = document.querySelectorAll(".carousel-item").length;
-    const intervalTime = 3000; // Tiempo en milisegundos (3 segundos)
-    let autoPlay;
+      let currentSlide = 0;
+      const totalSlides = document.querySelectorAll(".carousel-item").length;
+      const intervalTime = 3000; // Tiempo en milisegundos (3 segundos)
+      let autoPlay;
 
-    function updateCarousel() {
-      const offset = -currentSlide * 100;
-      document.querySelector(".carousel-inner").style.transform = `translateX(${offset}%)`;
-    }
+      function updateCarousel() {
+        const offset = -currentSlide * 100;
+        document.querySelector(
+          ".carousel-inner"
+        ).style.transform = `translateX(${offset}%)`;
+      }
 
-    function nextSlide() {
-      currentSlide = (currentSlide + 1) % totalSlides;
-      updateCarousel();
-    }
+      function nextSlide() {
+        currentSlide = (currentSlide + 1) % totalSlides;
+        updateCarousel();
+      }
 
-    function prevSlide() {
-      currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
-      updateCarousel();
-    }
+      function prevSlide() {
+        currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+        updateCarousel();
+      }
 
-    // Initialize autoplay
-    function startAutoplay() {
-      autoPlay = setInterval(nextSlide, intervalTime);
-    }
+      // Initialize autoplay
+      function startAutoplay() {
+        autoPlay = setInterval(nextSlide, intervalTime);
+      }
 
-    // Stop autoplay when navigating manually
-    function stopAutoplay() {
-      clearInterval(autoPlay);
-    }
+      // Stop autoplay when navigating manually
+      function stopAutoplay() {
+        clearInterval(autoPlay);
+      }
 
-    document.querySelector(".next").addEventListener("click", () => {
-      stopAutoplay();
-      nextSlide();
-      startAutoplay(); // Restart autoplay
-    });
+      document.querySelector(".next").addEventListener("click", () => {
+        stopAutoplay();
+        nextSlide();
+        startAutoplay(); // Restart autoplay
+      });
 
-    document.querySelector(".prev").addEventListener("click", () => {
-      stopAutoplay();
-      prevSlide();
-      startAutoplay(); // Restart autoplay
-    });
+      document.querySelector(".prev").addEventListener("click", () => {
+        stopAutoplay();
+        prevSlide();
+        startAutoplay(); // Restart autoplay
+      });
 
-    // Start autoplay on page load
-    startAutoplay();
+      // Start autoplay on page load
+      startAutoplay();
 
       // Animaciones de las secciones
       document.addEventListener("scroll", () => {
@@ -1379,6 +1381,34 @@
           title.appendChild(span);
         });
       });
+
+      // Manejador del evento submit
+      document
+        .getElementById("contact-form")
+        .addEventListener("submit", function (event) {
+          event.preventDefault(); // Evita el envío predeterminado del formulario
+
+          // Envía el formulario usando Formspree
+          fetch(this.action, {
+            method: this.method,
+            body: new FormData(this),
+            headers: {
+              Accept: "application/json",
+            },
+          })
+            .then((response) => {
+              if (response.ok) {
+                // Si el envío es exitoso, limpia los campos del formulario
+                this.reset();
+                alert("¡Mensaje enviado con éxito!"); // Muestra un mensaje de éxito
+              } else {
+                alert("Ocurrió un error al enviar el mensaje.");
+              }
+            })
+            .catch((error) => {
+              alert("Ocurrió un error al enviar el mensaje.");
+            });
+        });
     </script>
   </body>
 </html>
