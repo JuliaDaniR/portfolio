@@ -76,7 +76,6 @@ body {
   animation: moveStripe3 14s infinite alternate ease-in-out;
 }
 
-/* Capas adicionales */
 .light-stripe-small {
   position: absolute;
   width: 50%;
@@ -308,7 +307,7 @@ body {
 }
 
 .certificates {
-  background-image: url(fondo-prog2.jpeg);
+  background-image: url(img/fondo-prog2.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -319,7 +318,7 @@ body {
 }
 
 .gallery {
-  background-image: url(fondo3.jpeg);
+  background-image: url(img/fondo3.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -360,14 +359,14 @@ body {
 }
 
 #section3 {
-  background-image: url(fondo.jpg);
+  background-image: url(img/fondo.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
 .container-form {
   width: 90%;
   margin-top: 10rem;
-  margin-left: 13rem;
+  margin-left: 10rem;
   padding: 1rem;
   font-weight: bold;
 }
@@ -456,7 +455,7 @@ textarea {
 
 #section1 {
   background-color: #091d26;
-  background-image: url(mandala.png);
+  background-image: url(img/mandala.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -469,7 +468,7 @@ textarea {
 
 #section2 {
   background-color: #091d26;
-  background-image: url(fondo-prog.jpeg);
+  background-image: url(img/fondo-prog.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
 }
