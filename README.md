@@ -44,7 +44,7 @@ Soy una desarrolladora con experiencia en múltiples tecnologías y metodología
 
 ## Contacto 📫
 
-Si te interesa colaborar en algún proyecto o simplemente quieres ponerte en contacto, no dudes en enviarme un mensaje a [tu-email@example.com](julidrz83@gmail.com) o conectarte conmigo a través de [LinkedIn](https://www.linkedin.com/in/julia-daniela-rodriguez/).
+Si te interesa colaborar en algún proyecto o simplemente quieres ponerte en contacto, no dudes en enviarme un mensaje a [email](julidrz83@gmail.com) o conectarte conmigo a través de [LinkedIn](https://www.linkedin.com/in/julia-daniela-rodriguez/).
 
 ---
 
