@@ -1,6 +1,6 @@
 # Mi Portfolio 🚀
 
-¡Hola! Soy [Tu Nombre], una desarrolladora apasionada por la programación y el diseño. Este es mi espacio para mostrar mis habilidades, proyectos y logros. 
+¡Hola! Soy [Julia Daniela Rodriguez], una desarrolladora apasionada por la programación y el diseño. Este es mi espacio para mostrar mis habilidades, proyectos y logros. 
 
 ## Sobre Mí 👋
 
@@ -44,7 +44,7 @@ Soy una desarrolladora con experiencia en múltiples tecnologías y metodología
 
 ## Contacto 📫
 
-Si te interesa colaborar en algún proyecto o simplemente quieres ponerte en contacto, no dudes en enviarme un mensaje a julidrz83@gmail.com o conectarte conmigo a través de [LinkedIn](https://www.linkedin.com/in/julia-daniela-rodriguez/).
+Si te interesa colaborar en algún proyecto o simplemente quieres ponerte en contacto, no dudes en enviarme un mensaje a [tu-email@example.com](julidrz83@gmail.com) o conectarte conmigo a través de [LinkedIn](https://www.linkedin.com/in/julia-daniela-rodriguez/).
 
 ---
 
