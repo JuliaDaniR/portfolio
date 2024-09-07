@@ -1021,133 +1021,8 @@
         <div id="certificates" class="certificates">
           <h1 class="titulo-certificados">Certificados</h1>
           <div class="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item">
-                <img src="img/certificado1.png" alt="Certificado 1" />
-              </div>
-              <div class="carousel-item">
-                <img src="img/certificado2.png" alt="Certificado 2" />
-              </div>
-              <div class="carousel-item">
-                <img src="img/certificado3.png" alt="Certificado 3" />
-              </div>
-              <div class="carousel-item">
-                <img src="img/certificado4.png" alt="Certificado 4" />
-              </div>
-              <div class="carousel-item">
-                <img src="img/certificado5.png" alt="Certificado 5" />
-              </div>
-              <div class="carousel-item">
-                <img src="img/certificado6.png" alt="Certificado 6" />
-              </div>
-              <div class="carousel-item">
-                <img src="img/certificado7.png" alt="Certificado 7" />
-              </div>
-              <div class="carousel-item">
-                <img src="img/certificado8.png" alt="Certificado 8" />
-              </div>
-              <div class="carousel-item">
-                <img src="img/certificado9.png" alt="Certificado 9" />
-              </div>
-              <div class="carousel-item">
-                <img src="img/certificado10.png" alt="Certificado 10" />
-              </div>
-              <div class="carousel-item">
-                <img src="img/certificado11.png" alt="Certificado 11" />
-              </div>
-              <div class="carousel-item">
-                <img src="img/certificado12.png" alt="Certificado 12" />
-              </div>
-              <div class="carousel-item">
-                <img src="img/certificado13.png" alt="Certificado 13" />
-              </div>
-              <div class="carousel-item">
-                <img src="img/certificado14.png" alt="Certificado 14" />
-              </div>
-              <div class="carousel-item">
-                <img src="img/certificado15.png" alt="Certificado 15" />
-              </div>
-              <div class="carousel-item">
-                <img src="img/certificado16.png" alt="Certificado 16" />
-              </div>
-              <div class="carousel-item">
-                <img src="img/certificado17.png" alt="Certificado 17" />
-              </div>
-              <div class="carousel-item">
-                <img src="img/certificado18.png" alt="Certificado 18" />
-              </div>
-              <div class="carousel-item">
-                <img src="img/certificado19.png" alt="Certificado 19" />
-              </div>
-              <div class="carousel-item">
-                <img src="img/certificado20.png" alt="Certificado 20" />
-              </div>
-              <div class="carousel-item">
-                <img src="img/certificado21.png" alt="Certificado 21" />
-              </div>
-              <div class="carousel-item">
-                <img src="img/certificado22.png" alt="Certificado 22" />
-              </div>
-              <div class="carousel-item">
-                <img src="img/certificado23.png" alt="Certificado 23" />
-              </div>
-              <div class="carousel-item">
-                <img src="img/certificado24.png" alt="Certificado 24" />
-              </div>
-              <div class="carousel-item">
-                <img src="img/certificado25.png" alt="Certificado 25" />
-              </div>
-              <div class="carousel-item">
-                <img src="img/certificado26.png" alt="Certificado 26" />
-              </div>
-              <div class="carousel-item">
-                <img src="img/certificado27.png" alt="Certificado 27" />
-              </div>
-              <div class="carousel-item">
-                <img src="img/certificado28.png" alt="Certificado 28" />
-              </div>
-              <div class="carousel-item">
-                <img src="img/certificado29.png" alt="Certificado 29" />
-              </div>
-              <div class="carousel-item">
-                <img src="img/certificado30.png" alt="Certificado 30" />
-              </div>
-              <div class="carousel-item">
-                <img src="img/certificado31.png" alt="Certificado 31" />
-              </div>
-              <div class="carousel-item">
-                <img src="img/certificado32.png" alt="Certificado 32" />
-              </div>
-              <div class="carousel-item">
-                <img src="img/certificado33.png" alt="Certificado 33" />
-              </div>
-              <div class="carousel-item">
-                <img src="img/certificado34.png" alt="Certificado 34" />
-              </div>
-              <div class="carousel-item">
-                <img src="img/certificado35.png" alt="Certificado 35" />
-              </div>
-              <div class="carousel-item">
-                <img src="img/certificado36.png" alt="Certificado 36" />
-              </div>
-              <div class="carousel-item">
-                <img src="img/certificado37.png" alt="Certificado 37" />
-              </div>
-              <div class="carousel-item">
-                <img src="img/certificado38.png" alt="Certificado 38" />
-              </div>
-              <div class="carousel-item">
-                <img src="img/certificado39.png" alt="Certificado 39" />
-              </div>
-              <div class="carousel-item">
-                <img src="img/certificado40.png" alt="Certificado 40" />
-              </div>
-              <div class="carousel-item">
-                <img src="img/certificado41.png" alt="Certificado 41" />
-              </div>
-              <div class="carousel-item">
-                <img src="img/certificado42.png" alt="Certificado 42" />
-              </div>
+            <div class="carousel-inner" id="carouselItems">
+              <!-- Los items del carrusel serán añadidos por JavaScript -->
             </div>
             <div class="carousel-control">
               <button class="prev">&#10094;</button>
@@ -1250,6 +1125,24 @@
       setInterval(updateText, 6000); // Cambia el texto cada 6 segundos (5000ms + 1000ms de transición)
 
       // Carousel
+      // Número de certificados
+      const totalCertificados = 44;
+
+      // Selecciona el contenedor donde se agregarán los items
+      const carouselInner = document.getElementById("carouselItems");
+
+      // Genera los items dinámicamente
+      for (let i = 1; i <= totalCertificados; i++) {
+        const div = document.createElement("div");
+        div.classList.add("carousel-item");
+
+        // Inserta la imagen y el alt
+        div.innerHTML = `<img src="img/certificado${i}.png" alt="Certificado ${i}" />`;
+
+        // Añade el item al contenedor del carrusel
+        carouselInner.appendChild(div);
+      }
+
       let currentSlide = 0;
       const totalSlides = document.querySelectorAll(".carousel-item").length;
       const intervalTime = 3000; // Tiempo en milisegundos (3 segundos)
