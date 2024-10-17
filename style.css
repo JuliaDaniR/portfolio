@@ -32,14 +32,13 @@ body {
   z-index: 0;
 }
 
-/* Posicionamiento del contenedor de secciones */
 .section-texts {
   position: absolute;
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
-  pointer-events: none; /* Evitar interacción con el contenedor */
+  pointer-events: none;
 }
 
 .section-text {
@@ -96,7 +95,6 @@ body {
   background: linear-gradient(180deg,rgba(2, 27, 22, 0.8), rgba(80, 195, 126, 0.5), rgba(120, 255, 170, 0.8));
 }
 
-/* Inverted sections */
 .section-text-inverted-1 {
   top: 25%;
   left: 70%;
@@ -139,7 +137,6 @@ body {
   background: linear-gradient(330deg,rgba(4, 30, 14, 0.8), rgba(80, 195, 126, 0.5), rgba(120, 255, 170, 0.8));
 }
 
-/* Third set of sections */
 .section-text-third-1 {
   top: 10%;
   left: 40%;
@@ -393,15 +390,14 @@ body {
 .container-sections {
   background: repeating-linear-gradient(
     25deg,
-    /* Ángulo de las rayas */ black,
-    /* Primer color */ black 20px,
-    /* Ancho de la raya negra */ rgb(0, 170, 255) 20px,
-    /* Espacio entre las rayas negras y las azules */ rgb(0, 128, 255) 40px,
-    /* Ancho de la raya azul */ rgb(0, 128, 73) 40px,
-    /* Espacio entre las rayas azules y verdes */ rgb(0, 128, 81) 60px,
-    /* Ancho de la raya verde */ rgb(187, 124, 42) 60px,
-    /* Espacio entre las rayas verdes y naranjas */ rgb(194, 135, 40) 80px
-      /* Ancho de la raya naranja */
+     black,
+     black 20px,
+     rgb(0, 170, 255) 20px,
+     rgb(0, 128, 255) 40px,
+     rgb(0, 128, 73) 40px,
+     rgb(0, 128, 81) 60px,
+     rgb(187, 124, 42) 60px,
+     rgb(194, 135, 40) 80px
   );
 }
 
@@ -540,27 +536,27 @@ body {
 .project-card img {
   width: 100%;
   height: 200px;
-  border-radius: 0.5rem; /* Equivalente a 8px */
+  border-radius: 0.5rem; 
 }
 
 .project-card h3 {
-  margin: 1rem 0 0.625rem; /* Equivalente a 16px 0 10px */
-  font-size: 1rem; /* Escala el tamaño del texto */
+  margin: 1rem 0 0.625rem; 
+  font-size: 1rem; 
 }
 
 .project-card h4 {
-  margin: 0.625rem; /* Equivalente a 16px 0 10px */
-  font-size: 1.3rem; /* Escala el tamaño del texto */
+  margin: 0.625rem; 
+  font-size: 1.3rem; 
 }
 
 .project-card p {
-  font-size: 0.8rem; /* Equivalente a 16px */
-  margin-bottom: 0.625rem; /* Equivalente a 10px */
+  font-size: 0.8rem; 
+  margin-bottom: 0.625rem; 
 }
 
 .tech-icons i {
-  font-size: 1rem; /* Equivalente a 24px */
-  margin: 0.3125rem; /* Equivalente a 5px */
+  font-size: 1rem;
+  margin: 0.3125rem; 
   padding: 0.1rem;
   z-index: 1;
 }
@@ -572,7 +568,7 @@ body {
 
 .project-links a {
   display: inline-block;
-  margin: 0.625rem 0.3125rem; /* Equivalente a 10px 5px */
+  margin: 0.625rem 0.3125rem; 
   text-decoration: none;
   font-size: 1rem;
   color: #007bff;
@@ -605,7 +601,7 @@ body {
 /* Texto del tooltip */
 .tooltip .tooltiptext {
   visibility: hidden;
-  width: 200px; /* Ajusta el ancho del tooltip si es necesario */
+  width: 200px;
   background: repeating-linear-gradient(
     -25deg,
     rgb(174, 173, 173),
@@ -625,7 +621,7 @@ body {
   line-height: 1.5rem;
   bottom: 125%;
   left: 50%;
-  transform: translateX(-50%); /* Centra el tooltip horizontalmente */
+  transform: translateX(-50%); 
   opacity: 0;
   transition: opacity 0.3s;
   font-size: 1rem;
@@ -642,7 +638,6 @@ body {
   border-color: #333 transparent transparent transparent;
 }
 
-/* Mostrar tooltip al hacer hover */
 .tooltip:hover .tooltiptext {
   visibility: visible;
   opacity: 1;
