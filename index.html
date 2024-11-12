@@ -1068,7 +1068,7 @@
             <a href="https://github.com/JuliaDaniR" target="_blank"
               ><i class="fab fa-github"></i
             ></a>
-            <a href="julia daniela rodriguez.pdf" target="_blank"
+            <a href="Julia Rodriguez.pdf" target="_blank"
               ><i class="fas fa-file-contract"></i
             ></a>
           </div>
@@ -1136,7 +1136,7 @@
           setTimeout(() => {
             centralTextElement.style.opacity = 0;
             centralIndex = (centralIndex + 1) % centralTexts.length;
-          }, 5000); // Mostrar durante 5 segundos
+          }, 5000);
         }
 
         function updateSectionTexts() {
@@ -1172,26 +1172,25 @@
             // Ocultar después de un tiempo con animación
             setTimeout(() => {
               el.style.animation = "disappear 3s forwards";
-            }, 2000); // Mostrar durante 2 segundos
+            }, 2000);
 
             sectionIndex = (sectionIndex + 1) % sectionTexts.length;
           });
 
           // Alternar entre conjuntos de posiciones
-          positionSetIndex = (positionSetIndex + 1) % 3; // Hay tres conjuntos de posiciones
+          positionSetIndex = (positionSetIndex + 1) % 3; 
         }
 
         // Inicializar el texto central y establecer intervalos para cambiar el texto
         updateCentralText();
-        setInterval(updateCentralText, 6000); // Cambia el texto central cada 6 segundos
+        setInterval(updateCentralText, 6000); 
 
         // Inicializar los textos de las secciones y establecer intervalos para cambiarlos
         updateSectionTexts();
-        setInterval(updateSectionTexts, 4000); // Cambia los textos de las secciones cada 4 segundos
+        setInterval(updateSectionTexts, 4000); 
       });
 
       // Carousel
-      // Número de certificados
       const totalCertificados = 44;
 
       // Selecciona el contenedor donde se agregarán los items
@@ -1201,17 +1200,13 @@
       for (let i = 1; i <= totalCertificados; i++) {
         const div = document.createElement("div");
         div.classList.add("carousel-item");
-
-        // Inserta la imagen y el alt
         div.innerHTML = `<img src="img/certificado${i}.png" alt="Certificado ${i}" />`;
-
-        // Añade el item al contenedor del carrusel
         carouselInner.appendChild(div);
       }
 
       let currentSlide = 0;
       const totalSlides = document.querySelectorAll(".carousel-item").length;
-      const intervalTime = 3000; // Tiempo en milisegundos (3 segundos)
+      const intervalTime = 3000;
       let autoPlay;
 
       function updateCarousel() {
@@ -1236,7 +1231,7 @@
         autoPlay = setInterval(nextSlide, intervalTime);
       }
 
-      // Stop autoplay when navigating manually
+      // Stop autoplay
       function stopAutoplay() {
         clearInterval(autoPlay);
       }
@@ -1244,13 +1239,13 @@
       document.querySelector(".next").addEventListener("click", () => {
         stopAutoplay();
         nextSlide();
-        startAutoplay(); // Restart autoplay
+        startAutoplay();
       });
 
       document.querySelector(".prev").addEventListener("click", () => {
         stopAutoplay();
         prevSlide();
-        startAutoplay(); // Restart autoplay
+        startAutoplay(); 
       });
 
       // Start autoplay on page load
@@ -1302,7 +1297,7 @@
         title.innerHTML = "";
 
         function animateTitle(speed) {
-          title.innerHTML = ""; // Limpia el contenido antes de cada animación
+          title.innerHTML = ""; 
 
           text.split("").forEach((letter, index) => {
             const span = document.createElement("span");
@@ -1318,7 +1313,7 @@
         // Segunda animación a 0.1s por letra después de la primera
         setTimeout(() => {
           animateTitle(0.1);
-        }, text.length * 0.4 * 1000 + 300); // +500ms para dar tiempo a la primera animación
+        }, text.length * 0.4 * 1000 + 300);
 
         // Animar cada ítem de la cuadrícula
         const skillItems = document.querySelectorAll(".skill-item");
@@ -1336,7 +1331,7 @@
         text.split("").forEach(function (char, index) {
           const span = document.createElement("span");
           span.textContent = char;
-          span.style.animationDelay = `${index * 0.1}s`; // Ajusta el delay para cada letra
+          span.style.animationDelay = `${index * 0.1}s`; 
           title.appendChild(span);
         });
       });
@@ -1345,7 +1340,7 @@
       document
         .getElementById("contact-form")
         .addEventListener("submit", function (event) {
-          event.preventDefault(); // Evita el envío predeterminado del formulario
+          event.preventDefault();
 
           // Envía el formulario usando Formspree
           fetch(this.action, {
@@ -1357,9 +1352,8 @@
           })
             .then((response) => {
               if (response.ok) {
-                // Si el envío es exitoso, limpia los campos del formulario
                 this.reset();
-                alert("¡Mensaje enviado con éxito!"); // Muestra un mensaje de éxito
+                alert("¡Mensaje enviado con éxito!"); 
               } else {
                 alert("Ocurrió un error al enviar el mensaje.");
               }
