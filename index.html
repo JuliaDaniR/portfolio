@@ -717,7 +717,10 @@
 
             <!-- Proyecto 8 -->
             <div class="project-card">
-              <img src="img/mentalista.png" alt="Mentalista" />
+              <img
+                src="img/calendario-adviento.png"
+                alt="Calendario de Adviento"
+              />
               <h4
                 style="
                   font-size: 1.5rem;
@@ -728,28 +731,26 @@
                   width: 100%;
                 "
               >
-                Mentalista
+                Calendario de Adviento con Lluvia de Estrellas Fugaces
               </h4>
               <p style="max-width: 100%; padding: 0.5rem">
-                Mentalista es un juego interactivo que ofrece dos modos de
-                juego: un jugador y multijugador. En el modo de un jugador, el
-                objetivo es adivinar un número secreto con un número limitado de
-                intentos. En el modo multijugador, los jugadores compiten para
-                adivinar el número secreto turnándose.
+                Este proyecto interactivo está inspirado en el espíritu
+                navideño, diseñado para crear una experiencia encantadora.
+                Incluye animaciones festivas como nieve, Papá Noel y una lluvia
+                de estrellas fugaces que iluminan el encabezado. 🎄
                 <br /><br />
                 <strong>Características:</strong>
                 <br />
-                <strong>Modo Un Jugador:</strong> Adivina el número secreto
-                antes de que se acaben los intentos. <br />
-                <strong>Modo Multijugador:</strong> Compite con otros jugadores
-                para adivinar el número secreto. Los jugadores toman turnos para
-                hacer sus conjeturas. <br />
-                <strong>Interfaz:</strong> Incluye botones para seleccionar el
-                modo de juego, ingresar nombres y números, y ver los resultados.
-                <br />
-                <strong>Resultados:</strong> Muestra los resultados de los
-                intentos y el estado del juego, incluyendo imágenes de
-                retroalimentación.
+                🌟 <strong>Animación de Papá Noel:</strong> Se mueve de manera
+                aleatoria y emite un "Ho Ho Ho" al ser clickeado. <br />
+                🌠 <strong>Lluvia de Estrellas Fugaces:</strong> Estrellas que
+                cruzan el encabezado dejando rastros brillantes. <br />
+                ❄️ <strong>Efecto de Nieve:</strong> Simulación de copos de
+                nieve cayendo suavemente. <br />
+                🎄 <strong>Cuenta Regresiva:</strong> Muestra los días, horas,
+                minutos y segundos restantes para Navidad. <br />
+                📱 <strong>Diseño Responsive:</strong> Compatible con
+                dispositivos móviles y de escritorio.
               </p>
               <div class="tech-icons">
                 <h4>Tecnologías utilizadas</h4>
@@ -764,26 +765,33 @@
                   <i class="devicon-css3-plain colored"></i>
                   <span class="tooltiptext"
                     ><strong>CSS3:</strong><br />
-                    Estilos visuales para páginas web</span
+                    Estilos visuales y animaciones</span
                   >
                 </div>
                 <div class="tooltip">
                   <i class="devicon-javascript-plain colored"></i>
                   <span class="tooltiptext"
                     ><strong>JavaScript:</strong><br />
-                    Lenguaje de programación para interacción dinámica</span
+                    Lógica de comportamiento dinámico</span
+                  >
+                </div>
+                <div class="tooltip">
+                  <i class="devicon-react-original colored"></i>
+                  <span class="tooltiptext"
+                    ><strong>React.js:</strong><br />
+                    Creación de componentes interactivos</span
                   >
                 </div>
               </div>
               <div class="project-links">
                 <a
-                  href="https://github.com/JuliaDaniR/mentalista"
+                  href="https://github.com/JuliaDaniR/desafio-navidad"
                   target="_blank"
                 >
                   <i class="devicon-github-original colored"></i>
                 </a>
                 <a
-                  href="https://juliadanir.github.io/mentalista/"
+                  href="https://desafio-navidad.vercel.app/"
                   target="_blank"
                 >
                   <i class="fas fa-globe"></i>
@@ -811,8 +819,8 @@
                 Una API RESTful diseñada para gestionar y explorar datos
                 relacionados con criaturas y eventos temáticos de Halloween.
                 Incluye un juego de trivia para desafiar los conocimientos de
-                los usuarios sobre mitos y leyendas.<br></br>
-                <strong>Características clave:</strong><br></br>
+                los usuarios sobre mitos y leyendas.<br /><br />
+                <strong>Características clave:</strong><br />
                 Autenticación y autorización con tokens JWT. Gestión de
                 monstruos con estadísticas personalizadas. Juego de trivia con
                 preguntas sobre mitos y leyendas. API documentada con Swagger
@@ -1027,13 +1035,11 @@
               - María Victoria Serrano, Compañera de Curso
             </footer>
           </blockquote>
-          <!-- Agrega más blockquotes según sea necesario -->
         </div>
         <div id="certificates" class="certificates">
           <h1 class="titulo-certificados">Certificados</h1>
           <div class="carousel">
             <div class="carousel-inner" id="carouselItems">
-              <!-- Los items del carrusel serán añadidos por JavaScript -->
             </div>
             <div class="carousel-control">
               <button class="prev">&#10094;</button>
@@ -1094,7 +1100,6 @@
 
       window.addEventListener("scroll", function () {
         if (window.scrollY > 300) {
-          // Muestra el botón después de desplazar 300px
           backToTopBtn.classList.add("show");
         } else {
           backToTopBtn.classList.remove("show");
@@ -1118,7 +1123,7 @@
 
         let centralIndex = 0;
         let sectionIndex = 0;
-        let positionSetIndex = 0; // Para alternar entre los conjuntos de posiciones
+        let positionSetIndex = 0;
 
         const centralTextElement = document.getElementById("text");
         const sectionTextElements = [];
@@ -1201,7 +1206,7 @@
       });
 
       // Carousel
-      const totalCertificados = 44;
+      const totalCertificados = 70;
 
       // Selecciona el contenedor donde se agregarán los items
       const carouselInner = document.getElementById("carouselItems");
